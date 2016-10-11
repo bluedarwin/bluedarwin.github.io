@@ -155,7 +155,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/header2.jpg');
+  background-image: url('../img/min/header2-min.jpg');
   text-align: center;
   color: white;
 }
@@ -601,7 +601,8 @@ font-size: 16px;
 }
 
 .bg-industry {
-background-image: url('../img/flying.jpeg');
+background-image: url('../img/min/flying-min.jpeg');
+background-size: cover;
 }
 
 .img-circle {
