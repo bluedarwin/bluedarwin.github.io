@@ -659,3 +659,8 @@ background-image: url('../img/flying.jpeg');
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
+
+.industryCheckbox {
+color: #777777;
+
+}
