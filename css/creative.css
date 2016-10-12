@@ -717,9 +717,28 @@ form .row:first-child .floating-label-form-group {
 color: #777777;
 
 }
+/*.navbar-brand >img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}*/
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+}
 
-.img-brand {
-height:160%;
-margin-top: -10px;
+.navbar-brand {
+  height: 50px;
+}
 
+.nav >li >a {
+  padding-top: 18px;
+  padding-bottom: 10px;
+}
+ .navbar-toggle {
+  padding: 10px;
+  margin: 10px 8px 10px 0;
 }
