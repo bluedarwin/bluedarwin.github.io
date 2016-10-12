@@ -27,6 +27,25 @@
     <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
 
+    <!-- email -->
+    <script type="text/javascript"> 
+function hgsubmit() 
+{ 
+if (/\S+/.test(document.hgmailer.name.value) == false) alert ("Please provide your name."); 
+else if (/^\S+@[a-z0-9_.-]+\.[a-z]{2,6}$/i.test(document.hgmailer.email.value) == false) alert ("A valid email address is required."); 
+// else if (@^(http\:\/\/|https\:\/\/)?([a-z0-9][a-z0-9\-]*\.)+[a-z0-9][a-z0-9\-]*$@i.test(document.hgmailer.website.value) == false) alert ("A valid website is required."); 
+else if (/\S+/.test(document.hgmailer.phone.value) == false) alert ("Your phone number is needed."); 
+ else if (/\S+/.test(document.hgmailer.country.value) == false) alert ("Your country is needed.");
+ else if (/\S+/.test(document.hgmailer.company.value) == false) alert ("Your company is needed."); 
+  else if (/\S+/.test(document.hgmailer.comment.value) == false) alert ("Your email content is needed."); 
+
+  else { 
+       document.hgmailer.submit(); 
+       alert ('Thank you!\nYour message is sent.'); 
+       } 
+} 
+</script> 
+
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -201,6 +220,9 @@ impacts</p>
                 <br/>
             <div class="row">
                 <div class="col-lg-12">
+                    <h3 class="text-center"><u>Sales, marketing and distribution</u></h3>
+                    <br/>
+                    <br/>
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
@@ -251,6 +273,13 @@ available to facilitate your order from factory to your door.</p>
                                 </div>
                             </div>
                         </li>
+                    </ul>
+                    <br/>
+                    <br/>
+                    <h3 class="text-center"><u>Sales, marketing and distribution</u></h3>
+                    <br/>
+                    <br/>
+                    <ul class="timeline">
                         <li class="timeline-inverted">
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/min/shanghai-min.jpg" alt="">
@@ -318,7 +347,6 @@ in supply and demand.</p>
                                 </div>
                             </div>
                         </li>
-
                     </ul>
  <!--                    <br/>
                     <br/> -->
@@ -381,17 +409,108 @@ representative. </h4>
 <h2 class="section-heading">Contact Us</h2>
                     <hr class="primary text-center">
 
+<!-- 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuS2eMyPw0hHW19fn_NNQcBGSmbV1-wwpvOa94k8nT2a33KA/viewform?embedded=true" width="94%" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuS2eMyPw0hHW19fn_NNQcBGSmbV1-wwpvOa94k8nT2a33KA/viewform?embedded=true" width="94%" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<!-- 
+<form action="http://www.mydomain.com/cgi-sys/formmail.pl" method="post">   
+<input type="hidden" name="recipient" value="inquire@bluedarwintrade.com"> 
+<input type="hidden" name="subject" value="Website Inquiry"> 
+<input type="text" name="email" size="20" value="Visitor E-Mail"><br> 
+<input type="text" name="tellme" size="20" value="E-Mail Content"><br><br> 
+<input type="submit" name="submit" value="E-Mail Me!"> 
+<input type="hidden" name="redirect" value="http://mydomain.com/redirect-path">  -->
+
+
+
+        <div class="row">
+            <div class="col-md-12 col-xs-10 col-md-offset-0 col-xs-offset-1">
+                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+                <form action="http://www.bluedarwintrade.com/cgi-sys/formmail.pl" method="post" name="hgmailer" id="contactForm" novalidate> 
+                    <input type="hidden" name="recipient" value="inquire@bluedarwintrade.com"> 
+                    <input type="hidden" name="subject" value="Website Inquiry">
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Name</label>
+                            <input type="text" name="name" size="30" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Email Address</label>
+                            <input type="email" name="email" size="30" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" name="phone" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Your Website</label>
+                            <input type="text" class="form-control" name="website" placeholder="Website" id="website" required data-validation-required-message="Please enter your website.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Country</label>
+                            <input type="text" class="form-control" name="country" placeholder="Country" id="country" required data-validation-required-message="Please enter your country.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Company</label>
+                            <input type="text" class="form-control" name="company" placeholder="Company" id="company" required data-validation-required-message="Please enter your company.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <br/>
+                    <label>Industry</label>
+                    <br/>
+                    <label class="checkbox-inline"><input name="industry" type="checkbox" value="Importer/Distributor">Importer/Distributor</label>
+                    <label class="checkbox-inline"><input name="industry" type="checkbox" value="Manufacturer">Manufacturer</label>
+                    <label class="checkbox-inline"><input name="industry" type="checkbox" value="Retailer">Retailer</label>
+                    <label class="checkbox-inline"><input name="industry" type="checkbox" value="Retailer">Other</label>
+                    <br/>
+
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Message</label>
+                            <textarea rows="5" name="comment" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button  type="button" class="btn btn-default" onclick="hgsubmit();">Send</button>
+                            <input type="hidden" name="redirect" value="http://bluedarwintrade.com"> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
 
 
 
 
             
                     <hr class="primary text-center">
-                    <p>2015-2016, Fuzhou Blue Darwin International Trading Limited Liability Company. All Rights Reserved.
+                    <p>Copyright © 2016 Fuzhou Blue Darwin International Trading LLC. All Rights Reserved.<br/>
 Riverside Plaza, 78 Rujiang East Road, Building 1 Floor 19
-Mawei Free Trade Zone, Fuzhou City, Fujian Province, China, 350015
+Mawei Free Trade Zone,<br/>Fuzhou City, Fujian Province, China, 350015
 </p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
@@ -422,6 +541,9 @@ Mawei Free Trade Zone, Fuzhou City, Fujian Province, China, 350015
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
   
 
 </body>
