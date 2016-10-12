@@ -668,8 +668,7 @@ color: #777777;
 }
 
 .img-brand {
-
-max-height: inherit;
+height:180%;
 margin-top: -11px;
 
 }
