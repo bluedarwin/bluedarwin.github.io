@@ -727,6 +727,7 @@ color: #777777;
 }
 .navbar-brand>img {
   height: 100%;
+  padding: 5px;
   width: auto;
 }
 
@@ -736,7 +737,7 @@ color: #777777;
 
 .nav >li >a {
   padding-top: 18px;
-  padding-bottom: 10px;
+  padding-bottom: 18px;
 }
  .navbar-toggle {
   padding: 10px;
